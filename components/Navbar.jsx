@@ -1,9 +1,11 @@
 "use client"
 import React from "react";
-import { assets} from "@/assets/assets";
+import { assets } from "@/public/assets/assets";
 import Link from "next/link"
 import { useAppContext } from "@/context/AppContext";
 import Image from "next/image";
+
+import img from '../public/assets/logoAA.png'
 
 const Navbar = () => {
 
@@ -12,9 +14,9 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
       <Image
-        className="cursor-pointer w-28 md:w-32"
+        className="cursor-pointer w-28 md:w-22 h-10"
         onClick={() => router.push('/')}
-        src={assets.logo}
+        src={img}
         alt="logo"
       />
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
@@ -22,7 +24,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link href="/all-products" className="hover:text-gray-900 transition">
-          Shop
+          All Machines
         </Link>
         <Link href="/" className="hover:text-gray-900 transition">
           About Us

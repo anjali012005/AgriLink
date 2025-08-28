@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets/assets";
 
 
 const HeaderSlider = () => {
@@ -46,7 +46,7 @@ const HeaderSlider = () => {
   return (
     <div className="overflow-hidden relative w-full flex justify-center">
       <video
-        src= './Agri.mp4'
+        src='./Agri.mp4'
         className="w-full max-h-96 rounded-xl object-cover p-3"
         // controls
         autoPlay

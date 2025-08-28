@@ -12,6 +12,26 @@ const nextConfig = {
                 hostname: 'raw.githubusercontent.com',
                 pathname: '**',
             },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                pathname: '**',
+            },
+            {
+                protocol: "https",
+                hostname: "tse3.mm.bing.net",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "tse1.mm.bing.net",
+                pathname: "**",
+            },
+            {
+                protocol: "https",
+                hostname: "tse4.mm.bing.net",
+                pathname: "**",
+            },
         ],
     },
 };
