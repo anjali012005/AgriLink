@@ -10,11 +10,14 @@
 !.yarn/releases
 !.yarn/versions
 
+.env
+
 # testing
 /coverage
 
 # next.js
 /.next/
+/.env/
 /out/
 
 # production
